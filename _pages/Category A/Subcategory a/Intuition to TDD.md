@@ -1,3 +1,8 @@
+---
+title: "Test-Driven Development Walk-Through"
+date: "2025-08-19"
+---
+
 Test-Driven Development Walk-Through: Building a **Tic-Tac-Toe** CLI from Scratch
 =================================================================================
 
