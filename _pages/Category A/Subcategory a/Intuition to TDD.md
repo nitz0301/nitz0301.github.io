@@ -387,7 +387,9 @@ Green.
 
 ## 4. Final Source Code
 
-<details> <summary><code>tic_tac_toe.py</code></summary>
+
+>tic_tac_toe.py
+
 
 ```python
 """Tic-Tac-Toe (TDD Edition)"""  
@@ -482,9 +484,9 @@ def  cli() -> None:
 if __name__ == "__main__":
 	cli()
 ```
-</details> 
 
-<details> <summary><code>test_tic_tac_toe.py</code></summary>
+
+>test_tic_tac_toe.py
 
 
 ```python
@@ -539,7 +541,7 @@ def test_game_alternates_players():
     g.play_turn(1)  # O
     assert g.board.cells[1] == "O"
 ```
-</details>
+
 
 Run:
 ```bash
