@@ -25,9 +25,9 @@ In this post we’ll **start with tests**—Red → Green → Refactor—until w
 ## 0. The Intuitive Solution (Baseline)
 Here’s the _typical_ beginner script you may already have (abridged for readability):
 
-<details><summary> <h3> tic_tac_toe_intuitive.py (expand to view code) </h3></summary> 
+<details><summary>tic_tac_toe_intuitive.py (expand to view code)</summary> 
 
-<pre><code class=language-python>
+<pre><code class="language-python">
    
     import os
 
