@@ -14,10 +14,10 @@ linkedin_username: www.linkedin.com/in/nishith-sharma0301
 facebook_username: facebook
 
 # External API
-data-repo: "nitz0301/nitz0301.github.io"
-data-repoid: "R_kgDOPgnA_A"
-data-category: "Q&A"
-data-categoryid: "DIC_kwDOPgnA_M4CuWOx"
+giscus-repo: "nitz0301/nitz0301.github.io"
+giscus-repoid: "R_kgDOPgnA_A"
+giscus-category: "Q&A"
+giscus-categoryid: "DIC_kwDOPgnA_M4CuWOx"
 goatcounter_code: byanko77
 google_analytics:
 
