@@ -29,7 +29,6 @@ Here’s the _typical_ beginner script you may already have (abridged for readab
 <summary> # tic_tac_toe_intuitive.py </summary> 
 
 <pre><code class="language-python">
-
 import os
 
 def clear():
@@ -118,21 +117,15 @@ while(win == False):
                 player = 1
     else:
         print("Invalid position, retry")
-            
 </code></pre>
 </details>
 
 It works—until you need to:
-
 -   port it to Windows & macOS (terminal‐clearing quirks)
-    
 -   swap the UI (e.g., web or Tkinter)
-    
 -   add an AI player
-    
 -   ensure that a refactor doesn’t break anything
- 
- No tests ⇒ no safety net.
+No tests ⇒ no safety net.
 
 ## What Is TDD, Really?
 (“Red → Green → Refactor” is the visible tip of a much larger mindset iceberg.)
@@ -149,21 +142,13 @@ TDD was popularized by Kent Beck in _Extreme Programming_ (1999). His key insigh
 ### 1.2 Anatomy of the Red-Green-Refactor Cycle
 
 1.  **Red — _Specify_**
-    
     -   _Write a micro-behavioural test_ that captures one new requirement.
-        
     -   The failure is intentional; it proves the test can detect the missing behaviour.
-        
 2.  **Green — _Satisfy_**
-    
     -   _Write the minimum production code_ to pass **all** tests.
-        
     -   “Minimum” curbs gold-plating; YAGNI is built-in.
-        
 3.  **Refactor — _Simplify_**
-    
     -   Now that behaviour is protected, improve structure: rename, extract, remove duplication, optimise algorithms.
-        
     -   Tests must remain green, acting as safety rails.
 
 >**Cadence:** A healthy loop is tiny—30 seconds to 10 minutes. Longer loops often signal tests that are too broad or code that violates SRP (Single-Responsibility Principle). 
