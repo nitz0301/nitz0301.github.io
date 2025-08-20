@@ -25,9 +25,10 @@ In this post we’ll **start with tests**—Red → Green → Refactor—until w
 ## 0. The Intuitive Solution (Baseline)
 Here’s the _typical_ beginner script you may already have (abridged for readability):
 
-<details> <summary> # tic_tac_toe_intuitive.py </summary> 
+<details> 
+<summary> # tic_tac_toe_intuitive.py </summary> 
 
-```python
+<pre><code class="language-python">
 
 import os
 
@@ -118,7 +119,7 @@ while(win == False):
     else:
         print("Invalid position, retry")
             
-```
+</code></pre>
 </details>
 
 It works—until you need to:
