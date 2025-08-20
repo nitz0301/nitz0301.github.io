@@ -25,9 +25,9 @@ In this post we’ll **start with tests**—Red → Green → Refactor—until w
 ## 0. The Intuitive Solution (Baseline)
 Here’s the _typical_ beginner script you may already have (abridged for readability):
 
-<details><summary> <b> tic_tac_toe_intuitive.py (expand to view code) </b></summary> 
+<details><summary> <h3> tic_tac_toe_intuitive.py (expand to view code) </h3></summary> 
 
-~~~python
+<pre><code class=language-python>
    
     import os
 
@@ -117,7 +117,7 @@ Here’s the _typical_ beginner script you may already have (abridged for readab
                     player = 1
         else:
             print("Invalid position, retry")
-~~~
+</code></pre>
 </details>
 
 It works—until you need to:
