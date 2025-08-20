@@ -10,7 +10,7 @@ email: example@gmail.com
 github_username: nitz0301
 twitter_username: twitter
 instagram_username: instagram
-linkedin_username: www.linkedin.com/in/nishith-sharma0301
+linkedin_username: nishith-sharma0301
 facebook_username: facebook
 
 # External API
@@ -18,7 +18,7 @@ giscus_repo: "nitz0301/nitz0301.github.io"
 giscus_repoid: "R_kgDOPgnA_A"
 giscus_category: "Q&A"
 giscus_categoryid: "DIC_kwDOPgnA_M4CuWOx"
-goatcounter_code: byanko77
+goatcounter_code: nitz0301
 google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
