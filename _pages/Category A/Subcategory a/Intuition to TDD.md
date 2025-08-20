@@ -9,15 +9,15 @@ thumbnail: "/assets/img/tdd.jpg"
 *Author: Nishith Sharma
 Estimated reading time: 25 min*
 
-<details>
-<summary>**TL;DR** Writing the game first “by intuition” works, but you’ll discover bugs late and refactors are scary.  
+> **TL;DR** Writing the game first “by intuition” works, but you’ll discover bugs late and refactors are scary.  
 In this post we’ll **start with tests**—Red → Green → Refactor—until we ship a fully–tested, production-ready command-line Tic-Tac-Toe written in Python 3. By the end you’ll have:
+>
+>-   a clean, object-oriented `tic_tac_toe.py`
+>   
+>-   a complete `test_tic_tac_toe.py` suite (pytest)
+>    
+>-   a reproducible step-by-step TDD journal you can mimic on any project. 
 
--   a clean, object-oriented `tic_tac_toe.py`
-    
--   a complete `test_tic_tac_toe.py` suite (pytest)
-    
--   a reproducible step-by-step TDD journal you can mimic on any project. </summary>
 ## 0. The Intuitive Solution (Baseline)
 Here’s the _typical_ beginner script you may already have (abridged for readability):
 ```python
@@ -74,7 +74,8 @@ TDD was popularized by Kent Beck in _Extreme Programming_ (1999). His key insigh
     -   Now that behaviour is protected, improve structure: rename, extract, remove duplication, optimise algorithms.
         
     -   Tests must remain green, acting as safety rails.
-<summary> **Cadence:** A healthy loop is tiny—30 seconds to 10 minutes. Longer loops often signal tests that are too broad or code that violates SRP (Single-Responsibility Principle). </summary>
+
+>**Cadence:** A healthy loop is tiny—30 seconds to 10 minutes. Longer loops often signal tests that are too broad or code that violates SRP (Single-Responsibility Principle). 
 
 ### 1.3 Granularity: _What_ counts as a “test”?
 
@@ -153,6 +154,8 @@ They’re **complementary**—many teams write BDD acceptance tests for stories,
 4.  **Refactor tests too**: duplication and bad names in tests hurt future maintainers just as much.
     
 5.  **Keep build time < 10 s** locally**:** quarantine slow tests (DB, network) behind explicit markers.
+
+> **Mindset shift**: We’re not “writing tests after coding.” We’re designing **via** tests.
 
 ## 2. Project Scaffold
 
@@ -479,8 +482,10 @@ def  cli() -> None:
 if __name__ == "__main__":
 	cli()
 ```
+</details> 
 
-</details> <details> <summary><code>test_tic_tac_toe.py</code></summary>
+<details> <summary><code>test_tic_tac_toe.py</code></summary>
+
 
 ```python
 import pytest
@@ -563,5 +568,3 @@ pytest -q
 3.  **Confidence to refactor**: Want a 4×4 board? Change `WIN_PATTERNS`, run tests—done.
     
 4.  **Fewer bugs escape**: Each requirement is captured by at least one assertion.
-
-</details>
